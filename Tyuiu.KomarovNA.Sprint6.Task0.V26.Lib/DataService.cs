@@ -6,7 +6,9 @@ namespace Tyuiu.KomarovNA.Sprint6.Task0.V26.Lib
     {
         public double Calculate(int x)
         {
-            return (x*x + 1) / (3*x + 4);
+            x = 3;
+            double result = (x * x + 1) / (3 * x + 4);
+            return Math.Round(result, 3);
         }
     }
 }
