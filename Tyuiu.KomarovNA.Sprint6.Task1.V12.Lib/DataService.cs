@@ -11,7 +11,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task1.V12.Lib
             {
                 if (i==2) { result.Add(0.0); } else
                 {
-                    result.Add(Math.Sin(i) + (Math.Cos(i) + 1.0) / (2 - i) + 2 * i);
+                    result.Add(Math.Round(Math.Sin(i) + (Math.Cos(i) + 1.0) / (2 - i) + 2 * i), 2);
                 }
             }
             return result.ToArray();
