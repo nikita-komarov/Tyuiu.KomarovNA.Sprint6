@@ -9,7 +9,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task2.V16.Lib
             List<double> result = new List<double>();
             for (int i = startValue; i <= stopValue; i++)
             {
-                if (i == 2) { result.Add(0.0); }
+                if (i == 0.4) { result.Add(0.0); }
                 else
                 {
                     double res = Math.Cos(i) / (i-0.4) + Math.Sin(i) * 8*i + 2;
