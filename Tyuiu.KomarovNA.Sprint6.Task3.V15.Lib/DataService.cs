@@ -9,7 +9,8 @@ namespace Tyuiu.KomarovNA.Sprint6.Task3.V15.Lib
         {
             // spirin fix
             matrix[0, 3] = 19;
-            matrix[1, 1] = -17;
+            matrix[1, 1] = 32;
+            matrix[1, 3] = -17;
             // spirin fix
             int[] thirdCol = new int[matrix.GetLength(0)];
             for (int i = 0; i < matrix.GetLength(0); i++)
