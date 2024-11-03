@@ -7,14 +7,12 @@ namespace Tyuiu.KomarovNA.Sprint6.Task3.V15.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            int colToSort = 3;
-            int colToSortIndx = colToSort--;
             int[] thirdCol = new int[matrix.GetLength(0)];
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (j == colToSortIndx)
+                    if (j == 2)
                     {
                         thirdCol[i] = matrix[i, j];
                     }
@@ -25,7 +23,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task3.V15.Lib
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (j == colToSortIndx)
+                    if (j == 2)
                     {
                         matrix[i, j] = thirdCol[i];
                     }
