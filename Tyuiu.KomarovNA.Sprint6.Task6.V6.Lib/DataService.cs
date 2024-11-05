@@ -1,12 +1,22 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System.Text;
+using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.KomarovNA.Sprint6.Task6.V6.Lib
 {
     public class DataService : ISprint6Task6V6
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
-            return str;
+            string[] lines = File.ReadAllLines(path);
+            StringBuilder result = new StringBuilder();
+            foreach (string line in lines)
+            {
+                var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
+                words = words.Select(word => word.Contains('b') ? word: "").ToList();
+                result.Append(words + " ");
+            }
+
+            return result.ToString().Trim(); ;
         }
     }
 }
