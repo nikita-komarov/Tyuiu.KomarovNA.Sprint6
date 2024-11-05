@@ -13,7 +13,13 @@ namespace Tyuiu.KomarovNA.Sprint6.Task6.V6.Lib
             {
                 var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToList();
                 words = words.Select(word => word.Contains('b') ? word: "").ToList();
-                result.Append(words + " ");
+                foreach (var word in words)
+                {
+                    if (word.Length > 0 )
+                    {
+                        result.Append(word + " ");
+                    }
+                }
             }
 
             return result.ToString().Trim(); ;
