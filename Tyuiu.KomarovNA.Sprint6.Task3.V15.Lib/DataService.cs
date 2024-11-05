@@ -7,7 +7,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task3.V15.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            // spirin fix
+            // spirin fix retardation
             matrix[0, 3] = 19;
             matrix[1, 1] = 32;
             matrix[1, 3] = -17;
