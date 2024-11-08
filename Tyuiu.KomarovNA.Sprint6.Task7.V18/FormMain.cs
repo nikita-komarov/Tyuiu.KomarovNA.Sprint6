@@ -67,7 +67,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18
 
             try
             {
-                int[,] matrix_res = ds.GetMatrix(matrix);
+                int[,] matrix_res = ds.GetMatrix(openFilePath);
                 resultBox.ColumnCount = matrix_res.GetLength(1);
                 resultBox.RowCount = matrix_res.GetLength(0);
                 for (int i = 0; i < matrix_res.GetLength(0); i++)

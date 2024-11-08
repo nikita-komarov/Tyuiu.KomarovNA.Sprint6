@@ -4,9 +4,10 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
 {
     public class DataService : ISprint6Task7V18
     {
-        public int[,] GetMatrix(int[,] matrix)
+        public int[,] GetMatrix(string path)
         {
             int Colindx = 10;
+            int[,] matrix = ReadCsvToIntArray(path);
             //int[] Col = new int[matrix.GetLength(0)];
             //for (int i = 0; i < matrix.GetLength(0); i++)
             //{
@@ -29,11 +30,6 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
                 }
             }
             return matrix;
-        }
-
-        public int[,] GetMatrix(string path)
-        {
-            throw new NotImplementedException();
         }
 
         public int[,] ReadCsvToIntArray(string filePath)
