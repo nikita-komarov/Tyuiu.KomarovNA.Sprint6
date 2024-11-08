@@ -30,6 +30,12 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
             }
             return matrix;
         }
+
+        public int[,] GetMatrix(string path)
+        {
+            throw new NotImplementedException();
+        }
+
         public int[,] ReadCsvToIntArray(string filePath)
         {
             string[] lines = File.ReadAllLines(filePath);
