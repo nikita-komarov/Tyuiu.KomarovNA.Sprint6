@@ -43,7 +43,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
 
             for (int i = 0; i < rows; i++)
             {
-                int[] values = lines[i].Split(",").Select(int.Parse).ToArray();
+                int[] values = lines[i].Split(";").Select(int.Parse).ToArray();
                 for (int j = 0; j < cols; j++)
                 {
                     result[i, j] = values[j];
