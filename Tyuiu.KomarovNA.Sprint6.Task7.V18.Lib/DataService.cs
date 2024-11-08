@@ -37,7 +37,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
             string[] lines = File.ReadAllLines(filePath);
 
             int rows = lines.Length;
-            int cols = lines[0].Split(',').Length;
+            int cols = lines[0].Split(';').Length;
 
             int[,] result = new int[rows, cols];
 
