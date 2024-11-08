@@ -6,7 +6,7 @@ namespace Tyuiu.KomarovNA.Sprint6.Task7.V18.Lib
     {
         public int[,] GetMatrix(string path)
         {
-            int Colindx = 10;
+            int Colindx = 8;
             int[,] matrix = ReadCsvToIntArray(path);
             //int[] Col = new int[matrix.GetLength(0)];
             //for (int i = 0; i < matrix.GetLength(0); i++)
