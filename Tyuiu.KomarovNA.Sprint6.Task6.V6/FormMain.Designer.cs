@@ -84,6 +84,7 @@ partial class FormMain
         textBoxInput.ScrollBars = ScrollBars.Vertical;
         textBoxInput.Size = new Size(419, 349);
         textBoxInput.TabIndex = 0;
+        textBoxInput.TextChanged += textBoxInput_TextChanged;
         // 
         // groupBox3
         // 
@@ -113,6 +114,7 @@ partial class FormMain
         buttonHelp.TabIndex = 11;
         toolTip.SetToolTip(buttonHelp, "Информация о создателе приложения");
         buttonHelp.UseVisualStyleBackColor = true;
+        buttonHelp.Click += buttonHelp_Click;
         // 
         // buttonRun
         // 
@@ -124,6 +126,7 @@ partial class FormMain
         buttonRun.TabIndex = 10;
         toolTip.SetToolTip(buttonRun, "Запустить программу");
         buttonRun.UseVisualStyleBackColor = true;
+        buttonRun.Click += buttonRun_Click;
         // 
         // buttonOpenFile
         // 
